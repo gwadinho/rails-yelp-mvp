@@ -1,0 +1,7 @@
+<h1>Here's the reviews' list for <%= @restaurant.name %></h1>
+<div>
+  <%= @reviews.each do |rev| %>
+  <h2><%= rev.rating %></h2>
+  <p><%= rev.content %></p>
+  <% end %>
+</div>
